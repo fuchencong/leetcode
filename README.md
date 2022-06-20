@@ -577,6 +577,32 @@ flatten
 * 这里我们每遍历一层，都直接设置下一层的 next，这里需要使用一个变量记录 prev
 * 之后继续遍历下一层即可
 
+## 0117
+
+树节点 connect
+
+* 和上一题类似，只不过需要判断当前节点的 left/right 合法性，然后设置 prevNode 的 next*
+* 同时需要通过一个额外变量记住下一层的 head
+
+## 0118
+
+Pascal's Triangle
+
+* 单纯的代码实现问题，没有什么技巧
+
+## 0119
+
+Pascal's Triangle II
+
+* 类似于 118 Pascal's Triangle
+
+## 0120
+
+Triangle 最小路径和
+
+* 简单的动态规划问题：a[i][j] = min(a[i-1][j-1], a[i-1][j]) + triangle[i][j]
+* 最后寻找最小的数即可
+
 ## 0154
 
 可重复数字旋转之后，寻找最小数
